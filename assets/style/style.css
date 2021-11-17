@@ -2,7 +2,7 @@
 
 body {
     background-color: #fff;
-    padding: 0 20px;
+    padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -100,6 +100,69 @@ header img {
     width: 100%;
 }
 
+header section {
+    max-width: 880px !important;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 133px;
+}
+
+header section h2 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 144px;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+header section img {
+    width: 56px;
+    text-align: left;
+}
+
+header section p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #808E9A;
+}
+
+header section .row {
+    max-width: 880px;
+}
+
+header section .row > div > div {
+    width: fit-content !important;
+}
+
+main {
+    width: 100vw !important;
+}
+main .grow {
+    background-image: url("../images/bg-1.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    padding: 161px 130px 120.16px 130px;;
+}
+
+main .grow .container {
+    max-width: 1180px;
+    padding: 0 !important;
+}
+
+main .grow .container .row {
+    max-width: 1180px !important;
+    width: 100% !important;
+}
+
+main .grow .container img {
+    max-width: 350px;
+}
+
 @media screen and (max-width: 576px) {
     .navbar {
         max-width: 327px;
@@ -142,3 +205,38 @@ header img {
         margin-bottom: 104px;
     }
 }
+
+@media  (max-width: 768px) {
+    header section {
+        max-width: 160px !important;
+    }
+
+    header section .row > div:nth-child(1) > div img {
+        width: 35.56px;
+    }
+
+    header section .row > div:nth-child(2) img {
+        width: 31.22px;
+    }
+
+    header section .row > div:nth-child(1) > div h2 {
+        font-size: 60.95px;
+        line-height: 91.43px;
+    }
+
+    header section .row > div:nth-child(2) h2 {
+        font-size: 53.52px;
+        line-height: 80.28px;
+    }
+
+    header section .row > div:nth-child(1) > div p {
+        font-size: 15.24px;
+        line-height: 22.86px;
+    }
+
+    header section .row > div:nth-child(2) p {
+        font-size: 13.38px;
+        line-height: 20.07px;
+    }
+}
+
