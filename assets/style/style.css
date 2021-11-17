@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+body {
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mw-lg {
+    max-width: 1440px;
+}
+
+
+
+/************ NAVBAR ************/
+
+.navbar {
+    max-width: 1297px;
+    margin-top: 78px !important;
+    margin-bottom: 225px !important;
+    padding: 0;
+}
+
+.navbar img {
+    width: 240px;
+}
+
+.navbar button {
+    width: 136px;
+    height: 40px;
+    border: solid 1.5px #FF52C1;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #FF52C1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar button:focus-visible,
+.navbar button:hover {
+    color: #FF8ED7;
+    border-color: #FF8ED7;
+    box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+}
+
+header {
+    max-width: 1017px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #00252E;
+    margin-bottom: 26px;
+}
+
+header p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #00252E;
+    margin-bottom: 49px;
+}
+
+header button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF52C1;
+    color: #fff;
+    border: none;
+    width: 400px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 120px;
+}
+
+header button:focus-visible,
+header button:hover {
+    background-color: #FF8ED7;
+    box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+}
+
+header img {
+    max-width: 1016px;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        max-width: 327px;
+        margin-top: 24px !important;
+        margin-bottom: 112px !important;
+        padding: 0;
+    }
+
+    .navbar button {
+        width: 80px;
+        height: 24px;
+        font-size: 9.41px;
+        line-height: 12.82px;
+    }
+
+    .navbar img {
+        width: 96px;
+    }
+
+    header {
+        max-width: 296px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    header button {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 104px;
+    }
+}
