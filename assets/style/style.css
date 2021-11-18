@@ -241,6 +241,8 @@ footer {
 
 footer .container {
     padding: 0 !important;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 footer .row>div:nth-child(1) {
