@@ -146,21 +146,53 @@ main .grow {
     background-size: auto;
     background-size: cover;
     width: 100%;
-    padding: 161px 130px 120.16px 130px;;
+    padding-top: 229.44px;
+    padding-bottom: 188.66px;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 main .grow .container {
-    max-width: 1180px;
+    max-width: 1180px !important;
     padding: 0 !important;
 }
 
 main .grow .container .row {
     max-width: 1180px !important;
     width: 100% !important;
+    margin: 0 auto !important;
+}
+
+main .grow .container .row > div {
+    align-self: center;
+}
+
+main .grow .container .row > div:nth-child(1) {
+    padding:0 50px 0 0;
+}
+
+main .grow .container .row > div:nth-child(2) {
+    padding:0 0 0 50px;
 }
 
 main .grow .container img {
-    max-width: 350px;
+    max-width: 100%;
+}
+
+main .grow .container h2 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #00252E;
+    margin: 0 0 26px 0;
+}
+
+main .grow .container p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00252E;
 }
 
 @media screen and (max-width: 576px) {
