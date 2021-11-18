@@ -71,7 +71,7 @@ header p {
     margin-bottom: 49px;
 }
 
-header button {
+.button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -88,8 +88,8 @@ header button {
     margin-bottom: 120px;
 }
 
-header button:focus-visible,
-header button:hover {
+.button:focus-visible,
+.button:hover {
     background-color: #FF8ED7;
     box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
 }
@@ -132,13 +132,14 @@ header section .row {
     max-width: 880px;
 }
 
-header section .row > div > div {
+header section .row>div>div {
     width: fit-content !important;
 }
 
 main {
     width: 100vw !important;
 }
+
 main .grow {
     background-image: url("../images/bg-1.svg");
     background-repeat: no-repeat;
@@ -149,6 +150,7 @@ main .grow {
     padding-bottom: 188.66px;
     padding-left: 130px;
     padding-right: 130px;
+    margin-bottom: 190px;
 }
 
 main .grow .container {
@@ -162,16 +164,16 @@ main .grow .container .row {
     margin: 0 auto !important;
 }
 
-main .grow .container .row > div {
+main .grow .container .row>div {
     align-self: center;
 }
 
-main .grow .container .row > div:nth-child(1) {
-    padding:0 50px 0 0;
+main .grow .container .row>div:nth-child(1) {
+    padding: 0 50px 0 0;
 }
 
-main .grow .container .row > div:nth-child(2) {
-    padding:0 0 0 50px;
+main .grow .container .row>div:nth-child(2) {
+    padding: 0 0 0 50px;
 }
 
 main .grow .container img {
@@ -193,6 +195,149 @@ main .grow .container p {
     line-height: 24px;
     color: #00252E;
 }
+
+main .flowing {
+    background: transparent;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+main .flowing .container .row>div:nth-child(1) {
+    padding: 0 0 0 50px;
+}
+
+main .flowing .container .row>div:nth-child(2) {
+    padding: 0 50px 0 0;
+}
+
+main .users {
+    margin-bottom: 135px !important;
+}
+
+aside {
+    max-width: 1017px;
+    margin: auto;
+    margin-bottom: 178px !important;
+}
+
+aside h3 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+footer {
+    width: 100vw !important;
+    background-image: url(../images/bg-footer.svg);
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 280px 120px 103px 120px !important;
+    color: #fff;
+}
+
+footer .container {
+    padding: 0 !important;
+}
+
+footer .row>div:nth-child(1) {
+    padding: 0 0 0 0 !important;
+}
+
+footer .row>div:nth-child(2) {
+    padding: 0 0 0 340px !important;
+}
+
+footer img {
+    max-width: 240px;
+    margin-bottom: 27px;
+}
+
+footer .lorem-para {
+    max-width: 340px;
+    width: fit-content !important;
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+footer h6 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.phone {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.mail {
+    margin-bottom: 80px;
+}
+
+.details i {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.socials {
+    font-size: 32px;
+    margin-right: 24px;
+}
+
+.socials:hover {
+    color: #00C7FA;
+    cursor: pointer;
+}
+
+.newsletter-para {
+    max-width: 344px !important;
+}
+
+form input {
+    margin-top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #FF4343;
+    border-radius: 6px;
+    margin-right: 40px;
+    border: none;
+    height: 48px;
+    width: 320px;
+}
+
+form button {
+    background-color: #FF52C1;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 12px 41px 12px 41px;
+    width: 160px;
+}
+
+form button:focus-visible,
+form button:hover {
+    background-color: #FF8ED7;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FF4343;
+    margin-top: 2px;
+}
+
 
 @media screen and (max-width: 576px) {
     .navbar {
@@ -228,46 +373,80 @@ main .grow .container p {
         line-height: 21px;
     }
 
-    header button {
+    .button {
         width: 200px;
         height: 40px;
         font-size: 12px;
         line-height: 18px;
         margin-bottom: 104px;
     }
+
+    .grow {
+        padding-top: 180px !important;
+        padding-bottom: 133px !important;
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+    }
+
+    aside h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
     header section {
         max-width: 160px !important;
     }
 
-    header section .row > div:nth-child(1) > div img {
+    header section .row>div:nth-child(1)>div img {
         width: 35.56px;
     }
 
-    header section .row > div:nth-child(2) img {
+    header section .row>div:nth-child(2) img {
         width: 31.22px;
     }
 
-    header section .row > div:nth-child(1) > div h2 {
+    header section .row>div:nth-child(1)>div h2 {
         font-size: 60.95px;
         line-height: 91.43px;
     }
 
-    header section .row > div:nth-child(2) h2 {
+    header section .row>div:nth-child(2) h2 {
         font-size: 53.52px;
         line-height: 80.28px;
     }
 
-    header section .row > div:nth-child(1) > div p {
+    header section .row>div:nth-child(1)>div p {
         font-size: 15.24px;
         line-height: 22.86px;
     }
 
-    header section .row > div:nth-child(2) p {
+    header section .row>div:nth-child(2) p {
         font-size: 13.38px;
         line-height: 20.07px;
     }
 }
 
+@media screen and (max-width: 992px) {
+
+    main .grow .container .row>div {
+        padding: 0 !important;
+    }
+
+    main .grow .container h2 {
+        font-size: 20px;
+        line-height: 30px;
+        color: #00252E;
+        text-align: center !important;
+        margin-top: 40px !important;
+        margin-bottom: 16px !important;
+    }
+
+    main .grow .container p {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center !important;
+    }
+
+}
